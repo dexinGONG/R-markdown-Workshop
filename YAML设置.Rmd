@@ -1,0 +1,39 @@
+# YAML设置
+
+## pdf输出
+
+---
+title: "Tufte样式"
+subtitle: "一个R Markdown实现"
+author: "JJ Allaire，谢益辉"
+date: "`r Sys.Date()`"
+output:
+  tufte::tufte_html: default
+  tufte::tufte_book:
+    citation_package: natbib
+    latex_engine: xelatex
+  tufte::tufte_handout:
+    citation_package: natbib
+    latex_engine: xelatex
+ctex: yes
+link-citations: yes
+---
+
+## html输出
+
+---
+title: ""
+date: "`r Sys.Date()`"
+output:
+  rmdformats::readthedown:
+    highlight: kate
+---
+
+## doc输出
+
+---
+title: "Untitled"
+author: "环境与健康研究室"
+date: "`r Sys.Date()`"
+output: word_document
+---
